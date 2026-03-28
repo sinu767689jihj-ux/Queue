@@ -1,0 +1,18 @@
+import java.util.*;
+class QueueDemo1{
+    public static void main(String[] args){
+        Queue<String> q=new LinkedList<>();
+        q.add("Srinu");
+        q.add("Raja");
+        q.add("Kiran");
+        q.add("Sumanth");
+        q.add("Mamatha");
+        System.out.println(q);
+        System.out.println(q.peek());
+        System.out.println(q.size());
+        System.out.println(q.isEmpty());
+        while(!q.isEmpty()){
+            System.out.println(q.poll());
+        }
+    }
+}
