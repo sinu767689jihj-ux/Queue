@@ -1,0 +1,24 @@
+import java.util.*;
+class QueueDemo2{
+    public static void main(String[] args){
+        Queue<MahendraReddy> q=new LinkedList<>();
+        MahendraReddy m1=new MahendraReddy("Karna MahendraReddy",32,"PaireddyPalem");
+        MahendraReddy m2=new MahendraReddy("Koduri MahendraReddy",18,"PaireddyPalem");
+        MahendraReddy m3=new MahendraReddy("KasiReddy MahendraReddy",28,"PaireddyPalem");
+        q.add(m1);
+        q.add(m2);
+        q.add(m3);
+        MahendraReddy temp=q.poll();
+        System.out.println(temp.name+" "+temp.age+" "+temp.villageName);
+    }
+}
+class MahendraReddy{
+    String name;
+    int age;
+    String villageName;
+    MahendraReddy(String name,int age,String villageName){
+        this.name=name;
+        this.age=age;
+        this.villageName=villageName;
+        }
+}
